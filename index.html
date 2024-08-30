@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free To Play Games</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="spiner vh-100 d-flex justify-content-center align-items-center d-none">
+      <span class="loader"></span>
+    </div>
+    <nav class="navbar navbar-expand-lg rounded-5">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-3 text-white"
+          href="#"
+        >
+          <div class="logo">
+            <img class="" src="./css/logo-sm.png" alt="" />
+          </div>
+          <span> GAME REVIEWS</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                data-category="mmorpg"
+                href="#"
+                >MMORPG</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-category="shooter" href="#shooter">
+                SHOOTER</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="sailing" href="#sailing"
+                >SAILING</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="permadeath" href="#permadeath"
+                >PERMADEATH</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="superhero" href="#superhero"
+                >SUPERHERO</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-category="pixel" href="#pixel">PIXEL</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="games-section">
+      <div class="container">
+        <div class="row games"></div>
+      </div>
+    </section>
+
+    <section class="details-section pt-5 d-none">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <p>Details Game</p>
+          <span class="x-mark">x</span>
+        </div>
+        <div class="row game-details"></div>
+      </div>
+    </section>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

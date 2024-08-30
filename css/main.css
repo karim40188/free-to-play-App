@@ -1,0 +1,140 @@
+:root {
+  --bg-main: #2d3035;
+  --bg-secondary: #3a497b;
+}
+
+body {
+  background-color: var(--bg-main);
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 12px !important;
+}
+.active {
+  color: #0790c2 !important;
+}
+
+.logo {
+  width: 50px !important;
+}
+.logo img {
+  width: 100% !important;
+}
+body {
+  position: relative;
+}
+.navbar {
+  background-color: var(--bg-secondary);
+  color: white;
+  width: 900px;
+  position: fixed;
+  z-index: 9999;
+  transform: translateX(-50%);
+  left: 50%;
+  margin-top: 100px;
+  transition: all 600ms;
+}
+
+.nav-link:hover {
+  color: #0790c2 !important;
+}
+
+.games {
+  padding-top: 250px;
+}
+.card {
+  transition: 1s all;
+  cursor: pointer;
+}
+.card h5 {
+  font-size: 16px;
+}
+.card:hover {
+  scale: 1.06;
+}
+
+.card:hover .badge.free {
+  background-color: #0790c2 !important;
+  transition: 1s all;
+}
+.card p.description {
+  color: #62757d;
+  font-size: 14px;
+  height:30px;
+}
+.x-mark {
+  font-size: 22px;
+  cursor: pointer;
+}
+.details-section {
+  color: white;
+}
+
+.highlight {
+  color: black;
+  background-color: #0dcaf0;
+  border-radius: 10px;
+  font-size: 12px;
+  padding-inline: 6px;
+  padding-block: 4px;
+  margin-left: 3px;
+}
+.card-footer {
+  color: white;
+  /* font-size: 14px; */
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #FFF #FFF transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #FF3D00 #FF3D00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #FFF #FFF transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+    
