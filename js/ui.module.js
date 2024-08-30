@@ -33,8 +33,8 @@ export class Ui {
                   </div>
                 </div>
   <div class='card-footer d-flex justify-content-between'>
-                   <p class='badge' >shooter</p>
-                   <p class='badge' >PC (windows)</p>
+                   <p class='badge' >${games[i].genre}</p>
+                   <p class='badge' >${games[i].platform}</p>
               </div>
 
               </div>
